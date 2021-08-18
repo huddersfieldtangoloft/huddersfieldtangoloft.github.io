@@ -1,0 +1,80 @@
+<html>
+	<head>
+		<title>Huddersfield Tango Loft</title>
+	</head>
+	<body>
+		<style>
+			.split {
+				width: 100%;
+			}
+			.left {
+				float: left;
+				width: 50%;
+			}
+
+			.right {
+				float: right; 
+				width: 50%;
+			}
+			
+			.centered-left {
+				width: 35.5%;
+				transform: translate(70%, 0%);
+			}
+
+			.centered-right {
+			transform: translate(10%);
+				width: 50%;
+			}
+			
+			@media only screen and (max-width: 991px) {
+				.left {
+					float: none;
+					width: 100%;
+				}
+
+				.right {
+					float: none;
+					width: 100%;
+				}
+
+				.centered-left {
+					width: 70%;
+					transform: translate(20%, 0%);
+				}
+				
+				.centered-right {
+					transform: translate(1000%, 10%);
+					width: 1%;
+					padding-top: 5%;
+					padding-bottom: 5%;
+					scale: 120%;
+				}
+			}
+			
+			@media only screen and (max-width: 1297px) and (min-width: 992px) {
+				.centered-left {
+					width: 40%;
+					transform: translate(10%, 0%);
+				}
+				
+				.centered-right {
+					transform: translate(5%);
+					width: 45%;
+				}
+			}
+		</style>
+		<div>
+			<div class="split left">
+				<div class="centered-left">
+					<img src="page-1.png" />
+				</div>
+			</div>
+			<div class="split right">
+				<div class="centered-right">
+					<img src="page-2.png" />
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
